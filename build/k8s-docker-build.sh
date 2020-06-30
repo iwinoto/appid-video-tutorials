@@ -4,7 +4,7 @@ if [[ -z "${REGISTRY_NAMESPACE}" ]]; then
     REGISTRY_NAMESPACE=iwinoto_ibm
 fi
 if [[ -z "${REGISTRY}" ]]; then
-    REGISTRY=registry.au-syd.bluemix.net
+    REGISTRY=au.icr.io
 fi
 if [[ -z "${IMAGE_NAME}" ]]; then
     IMAGE_NAME=appid-testapp

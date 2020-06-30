@@ -15,3 +15,6 @@ fi
 # Get the available plans and locations from the service description using `ibmcloud catalog service appid`
 
 ibmcloud resource service-instance-create $APPID_INSTANCE_NAME appid graduated-tier $LOCATION -g $GROUP
+
+# Create service credential service key with `Reader` role name
+ibmcloud resource service-key-create $APPID_INSTANCE_NAME-key Reader --instance-name $APPID_INSTANCE_NAME
